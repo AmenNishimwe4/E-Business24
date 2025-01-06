@@ -31,7 +31,7 @@
     <xhtml:link rel="alternate" hreflang="en-au" href="https://onlinebusiness24.pro/au/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://onlinebusiness24.pro/privacy.html"/>
   </url>
-
+  
   <url>
     <loc>https://onlinebusiness24.pro/camera.html</loc>
     <lastmod>2025-01-05T05:35:55+00:00</lastmod>
@@ -42,4 +42,74 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://onlinebusiness24.pro/camera.html"/>
   </url>
   
+  <url>
+    <loc>https://onlinebusiness24.pro/t-shirt.html</loc>
+    <lastmod>2025-01-05T05:35:55+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://onlinebusiness24.pro/t-shirt.html"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://onlinebusiness24.pro/uk/t-shirt.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://onlinebusiness24.pro/au/t-shirt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onlinebusiness24.pro/t-shirt.html"/>
+  </url>
+  
+  <url>
+    <loc>https://onlinebusiness24.pro/fitness.html</loc>
+    <lastmod>2025-01-05T05:35:55+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://onlinebusiness24.pro/fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://onlinebusiness24.pro/uk/fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://onlinebusiness24.pro/au/fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onlinebusiness24.pro/fitness.html"/>
+  </url>
+  
+  <url>
+    <loc>https://onlinebusiness24.pro/smartwatch.html</loc>
+    <lastmod>2025-01-05T05:35:55+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://onlinebusiness24.pro/smartwatch.html"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://onlinebusiness24.pro/uk/smartwatch.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://onlinebusiness24.pro/au/smartwatch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onlinebusiness24.pro/smartwatch.html"/>
+  </url>
+  
+  <url>
+    <loc>https://onlinebusiness24.pro/sofa.html</loc>
+    <lastmod>2025-01-05T05:35:55+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://onlinebusiness24.pro/sofa.html"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://onlinebusiness24.pro/uk/sofa.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://onlinebusiness24.pro/au/sofa.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onlinebusiness24.pro/sofa.html"/>
+  </url>
+  
+  <url>
+    <loc>https://onlinebusiness24.pro/speaker.html</loc>
+    <lastmod>2025-01-05T05:35:55+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://onlinebusiness24.pro/speaker.html"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://onlinebusiness24.pro/uk/speaker.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://onlinebusiness24.pro/au/speaker.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onlinebusiness24.pro/speaker.html"/>
+  </url>
+  
+  <url>
+    <loc>https://onlinebusiness24.pro/vlog.html</loc>
+    <lastmod>2025-01-05T05:35:55+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://onlinebusiness24.pro/vlog.html"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://onlinebusiness24.pro/uk/vlog.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://onlinebusiness24.pro/au/vlog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onlinebusiness24.pro/vlog.html"/>
+  </url>
+  
+  <url>
+    <loc>https://onlinebusiness24.pro/conditions.html</loc>
+    <lastmod>2025-01-05T05:35:55+00:00</lastmod>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://onlinebusiness24.pro/conditions.html"/>
+    <xhtml:link rel="alternate" hreflang="en-gb" href="https://onlinebusiness24.pro/uk/conditions.html"/>
+    <xhtml:link rel="alternate" hreflang="en-au" href="https://onlinebusiness24.pro/au/conditions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onlinebusiness24.pro/conditions.html"/>
+  </url>
+
 </urlset>

@@ -518,5 +518,77 @@ const sidebar = document.getElementById("sidebar");
 sidebar.classList.toggle("active");
 }
 </script>
+
+
+
+ <script>
+// Wait for the page to fully load
+window.onload = function() {
+  // Create the overlay div that will cover the page
+  var overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.top = '0';
+  overlay.style.left = '0';
+  overlay.style.width = '100%';
+  overlay.style.height = '100%';
+  overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+  overlay.style.display = 'flex';
+  overlay.style.alignItems = 'center';
+  overlay.style.justifyContent = 'center';
+  overlay.style.zIndex = '9999';
+  
+  // Create the message box div
+  var messageBox = document.createElement('div');
+  messageBox.style.backgroundColor = 'white';
+  messageBox.style.padding = '20px';
+  messageBox.style.textAlign = 'center';
+  messageBox.style.borderRadius = '8px';
+  messageBox.style.boxShadow = '0px 4px 10px rgba(0, 0, 0, 0.3)';
+  messageBox.innerHTML = '<h3>You are about to visit Our CAMERAS & SMARTWATCHES Marketplace. Do You Really Want To Shop With Us?</h3>';
+
+  // Create YES button
+  var yesButton = document.createElement('button');
+  yesButton.innerHTML = 'YES';
+  yesButton.style.backgroundColor = 'green';
+  yesButton.style.color = 'white';
+  yesButton.style.padding = '10px 20px';
+  yesButton.style.margin = '10px';
+  yesButton.style.border = 'none';
+  yesButton.style.borderRadius = '5px';
+  yesButton.style.cursor = 'pointer';
+
+  // Create NO button
+  var noButton = document.createElement('button');
+  noButton.innerHTML = 'NO';
+  noButton.style.backgroundColor = 'red';
+  noButton.style.color = 'white';
+  noButton.style.padding = '10px 20px';
+  noButton.style.margin = '10px';
+  noButton.style.border = 'none';
+  noButton.style.borderRadius = '5px';
+  noButton.style.cursor = 'pointer';
+
+  // Append the buttons to the message box
+  messageBox.appendChild(yesButton);
+  messageBox.appendChild(noButton);
+
+  // Append the message box to the overlay
+  overlay.appendChild(messageBox);
+
+  // Append the overlay to the body
+  document.body.appendChild(overlay);
+
+  // YES button functionality: Remove overlay and unlock page
+  yesButton.onclick = function() {
+    document.body.removeChild(overlay);
+  };
+
+  // NO button functionality: Redirect to leadsleap.com
+  noButton.onclick = function() {
+    window.location.href = 'https://lltrco.com/?r=amennishimwe4';
+  };
+};
+</script>
+
 </body>
 </html>

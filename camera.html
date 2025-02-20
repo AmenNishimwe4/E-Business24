@@ -31,7 +31,7 @@
 <link rel="alternate" hreflang="x-default" href="https://onlinebusiness24.pro/" />
 
   
-<title>E-Business24 - Shop Smartwatches, Cameras & More</title>
+<title>E-Business24 - Shop Cameras & More</title>
 <!-- Meta Description -->  <meta name="description" content="Explore high-quality cameras at affordable prices on E-Business24. Shop top brands, DSLR, mirrorless, and action cameras with fast shipping. Capture every moment!">
  <!-- Keywords --> <meta name="keywords" content="Smartwatches, Cameras, Fitness Equipment, T-Shirts, Hoodies, Speakers, E-Business24, online shopping, affordable gadgets">
 <!-- Author --> <meta name="author" content="E-Business24">
@@ -178,4 +178,80 @@ Portrait Sony E Mount A7C ii .</p>
 
 
 
- <footer> <p>&copy; 2024 E-Business24. All rights reserved.</p> </footer> </body> </html>
+ <footer> <p>&copy; 2024 E-Business24. All rights reserved.</p> </footer> 
+ 
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Create overlay div
+    let overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100vw";
+    overlay.style.height = "100vh";
+    overlay.style.backgroundColor = "white";
+    overlay.style.display = "flex";
+    overlay.style.flexDirection = "column";
+    overlay.style.justifyContent = "center";
+    overlay.style.alignItems = "center";
+    overlay.style.zIndex = "9999";
+    overlay.style.textAlign = "center";
+    overlay.style.padding = "20px";
+
+    // Create message
+    let message = document.createElement("p");
+    message.textContent = "You are about to visit Our CAMERAS & SMARTWATCHES Marketplace. Do You Really Want To Shop With Us?";
+    message.style.fontSize = "20px";
+    message.style.color = "black";
+    message.style.marginBottom = "20px";
+    overlay.appendChild(message);
+
+    // Create button container
+    let buttonContainer = document.createElement("div");
+    buttonContainer.style.display = "flex";
+    buttonContainer.style.gap = "20px";
+
+    // Create Yes button
+    let yesButton = document.createElement("button");
+    yesButton.textContent = "YES";
+    yesButton.style.backgroundColor = "green";
+    yesButton.style.color = "white";
+    yesButton.style.border = "none";
+    yesButton.style.padding = "10px 20px";
+    yesButton.style.fontSize = "16px";
+    yesButton.style.cursor = "pointer";
+    yesButton.style.borderRadius = "5px";
+    yesButton.onclick = function () {
+        document.body.removeChild(overlay);
+    };
+
+    // Create No button
+    let noButton = document.createElement("button");
+    noButton.textContent = "NO";
+    noButton.style.backgroundColor = "red";
+    noButton.style.color = "white";
+    noButton.style.border = "none";
+    noButton.style.padding = "10px 20px";
+    noButton.style.fontSize = "16px";
+    noButton.style.cursor = "pointer";
+    noButton.style.borderRadius = "5px";
+    noButton.onclick = function () {
+        window.location.href = "https://lltrco.com/?r=amennishimwe4";
+    };
+
+    // Append buttons to container
+    buttonContainer.appendChild(yesButton);
+    buttonContainer.appendChild(noButton);
+
+    // Append container to overlay
+    overlay.appendChild(buttonContainer);
+
+    // Append overlay to body
+    document.body.appendChild(overlay);
+});
+
+</script>
+
+
+ 
+ </body> </html>

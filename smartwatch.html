@@ -33,7 +33,7 @@
 
  
  
-<title>E-Business24 - Shop Smartwatches, Cameras & More</title>
+<title>E-Business24 - Shop Smartwatches & More</title>
 <!-- Meta Description --> <meta name="description" content="Shop the latest Smartwatches, Cameras, Fitness Equipment, and more at E-Business24. Affordable prices and fast shipping!">
 <!-- Keywords --> <meta name="keywords" content="Smartwatches, Cameras, Fitness Equipment, T-Shirts, Hoodies, Speakers, E-Business24, online shopping, affordable gadgets">
 <!-- Author --> <meta name="author" content="E-Business24">
@@ -168,4 +168,81 @@ SIM Card Smart Watch Dual Camera GPS WIFI NFC Rugged 64G-ROM IP67 Android Men Wo
  
  
  
-<!-- Footer --> <footer> <p>&copy; 2024 E-Business24. All rights reserved.</p> </footer> </body> </html>
+<!-- Footer --> <footer> <p>&copy; 2024 E-Business24. All rights reserved.</p> </footer>
+ 
+ 
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Create overlay div
+    let overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100vw";
+    overlay.style.height = "100vh";
+    overlay.style.backgroundColor = "white";
+    overlay.style.display = "flex";
+    overlay.style.flexDirection = "column";
+    overlay.style.justifyContent = "center";
+    overlay.style.alignItems = "center";
+    overlay.style.zIndex = "9999";
+    overlay.style.textAlign = "center";
+    overlay.style.padding = "20px";
+
+    // Create message
+    let message = document.createElement("p");
+    message.textContent = "You are about to visit Our CAMERAS & SMARTWATCHES Marketplace. Do You Really Want To Shop With Us?";
+    message.style.fontSize = "20px";
+    message.style.color = "black";
+    message.style.marginBottom = "20px";
+    overlay.appendChild(message);
+
+    // Create button container
+    let buttonContainer = document.createElement("div");
+    buttonContainer.style.display = "flex";
+    buttonContainer.style.gap = "20px";
+
+    // Create Yes button
+    let yesButton = document.createElement("button");
+    yesButton.textContent = "YES";
+    yesButton.style.backgroundColor = "green";
+    yesButton.style.color = "white";
+    yesButton.style.border = "none";
+    yesButton.style.padding = "10px 20px";
+    yesButton.style.fontSize = "16px";
+    yesButton.style.cursor = "pointer";
+    yesButton.style.borderRadius = "5px";
+    yesButton.onclick = function () {
+        document.body.removeChild(overlay);
+    };
+
+    // Create No button
+    let noButton = document.createElement("button");
+    noButton.textContent = "NO";
+    noButton.style.backgroundColor = "red";
+    noButton.style.color = "white";
+    noButton.style.border = "none";
+    noButton.style.padding = "10px 20px";
+    noButton.style.fontSize = "16px";
+    noButton.style.cursor = "pointer";
+    noButton.style.borderRadius = "5px";
+    noButton.onclick = function () {
+        window.location.href = "https://lltrco.com/?r=amennishimwe4";
+    };
+
+    // Append buttons to container
+    buttonContainer.appendChild(yesButton);
+    buttonContainer.appendChild(noButton);
+
+    // Append container to overlay
+    overlay.appendChild(buttonContainer);
+
+    // Append overlay to body
+    document.body.appendChild(overlay);
+});
+
+</script>
+
+
+ 
+ </body> </html>

@@ -555,7 +555,75 @@ sidebar.classList.toggle("active");
  
  
   
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Create overlay
+    let overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100vh";
+    overlay.style.backgroundColor = "white";
+    overlay.style.display = "flex";
+    overlay.style.flexDirection = "column";
+    overlay.style.justifyContent = "center";
+    overlay.style.alignItems = "center";
+    overlay.style.zIndex = "9999";
+    overlay.style.textAlign = "center";
+    overlay.style.fontFamily = "Arial, sans-serif";
 
+    // Create question text
+    let question = document.createElement("h2");
+    question.textContent = "DO YOU WANT TO MAKE MONEY ONLINE?";
+    question.style.color = "black";
+    overlay.appendChild(question);
+
+    // Create button container
+    let buttonContainer = document.createElement("div");
+    buttonContainer.style.marginTop = "20px";
+    buttonContainer.style.display = "flex";
+    buttonContainer.style.gap = "20px";
+
+    // Create YES button
+    let yesButton = document.createElement("button");
+    yesButton.textContent = "YES";
+    yesButton.style.backgroundColor = "green";
+    yesButton.style.color = "white";
+    yesButton.style.border = "none";
+    yesButton.style.padding = "10px 20px";
+    yesButton.style.fontSize = "16px";
+    yesButton.style.cursor = "pointer";
+    yesButton.style.borderRadius = "5px";
+    yesButton.onclick = function () {
+        window.location.href = "https://lltrco.com/?r=amennishimwe4";
+    };
+
+    // Create NO button
+    let noButton = document.createElement("button");
+    noButton.textContent = "NO";
+    noButton.style.backgroundColor = "red";
+    noButton.style.color = "white";
+    noButton.style.border = "none";
+    noButton.style.padding = "10px 20px";
+    noButton.style.fontSize = "16px";
+    noButton.style.cursor = "pointer";
+    noButton.style.borderRadius = "5px";
+    noButton.onclick = function () {
+        document.body.removeChild(overlay);
+    };
+
+    // Append buttons to container
+    buttonContainer.appendChild(yesButton);
+    buttonContainer.appendChild(noButton);
+    overlay.appendChild(buttonContainer);
+
+    // Append overlay to body
+    document.body.appendChild(overlay);
+});
+
+
+</script>
 
 </body>
 </html>

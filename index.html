@@ -646,50 +646,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   -->
 
-<script>
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-import { getDatabase, ref, onValue, set, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-database.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyAiwR1GGmJ9vT08CbKpvDYkfSdiCmyxPdc",
-    authDomain: "ebusiness24-9de25.firebaseapp.com",
-    projectId: "ebusiness24-9de25",
-    storageBucket: "ebusiness24-9de25.firebasestorage.app",
-    messagingSenderId: "256126410779",
-    appId: "1:256126410779:web:52b9488ef945fd1c4698be",
-    measurementId: "G-N5LBG7J65Y",
-    databaseURL: "https://ebusiness24-9de25-default-rtdb.firebaseio.com/"
-};
-
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const database = getDatabase(app);
-
-const usersRef = ref(database, 'onlineUsers');
-const userRef = ref(database, `onlineUsers/${Date.now()}`);
-
-set(userRef, {
-    timestamp: serverTimestamp()
-});
-
-window.addEventListener("beforeunload", () => {
-    set(userRef, null);
-});
-
-onValue(usersRef, (snapshot) => {
-    const users = snapshot.val();
-    const onlineCount = users ? Object.keys(users).length : 0;
-    
-    let countryFlag = "https://flagcdn.com/w40/us.png";
-    
-    document.getElementById("user-count").innerHTML = `<img src='${countryFlag}' style='height: 1em;'> ${onlineCount} Online`;
-});
-
-document.write('<div id="user-count" style="font-size: 18px; font-weight: bold; display: flex; align-items: center;"></div>');
-</script>
-
- 
  
 </body>
 </html>

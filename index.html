@@ -649,6 +649,61 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+
+ // Generate a unique ID for each user session
+const userId = Math.random().toString(36).substring(2);
+const userDocRef = doc(db, "onlineUsers", userId);
+
+// Get user country using an API
+async function getUserCountry() {
+    try {
+        const res = await fetch("https://ipapi.co/json/");
+        const data = await res.json();
+        return data.country_code || "US";
+    } catch {
+        return "US"; // Default to US if API fails
+    }
+}
+
+// Track user presence in Firestore
+async function trackUser() {
+    const country = await getUserCountry();
+    await setDoc(userDocRef, {
+        timestamp: new Date().getTime(),
+        country: country
+    });
+
+    window.addEventListener("beforeunload", () => deleteDoc(userDocRef));
+}
+
+trackUser();
+
+// Monitor online users and determine the top country
+function monitorUsers() {
+    const usersRef = collection(db, "onlineUsers");
+    onSnapshot(usersRef, async (snapshot) => {
+        const users = snapshot.docs.map(doc => doc.data());
+        const onlineCount = users.length;
+
+        // Count users per country
+        const countryCount = {};
+        users.forEach(user => {
+            countryCount[user.country] = (countryCount[user.country] || 0) + 1;
+        });
+
+        // Get the country with the most users
+        const topCountry = Object.keys(countryCount).reduce((a, b) => countryCount[a] > countryCount[b] ? a : b, "US");
+
+        // Update UI
+        document.getElementById("onlineUsers").innerHTML = `<img src="https://flagcdn.com/w40/${topCountry.toLowerCase()}.png" style="height: 16px; vertical-align: middle;"> ${onlineCount} Online`;
+    });
+}
+
+monitorUsers();
+
+// HTML placeholder (Add this where you want the counter to appear)
+// <div id="onlineUsers" style="font-size: 16px; font-weight: bold;"></div>
+
 </script>
  
  
